@@ -10,7 +10,6 @@ SCOPES = [
 ]
 
 def authenticate():
-    """Authenticate and return the Google Drive service."""
     creds = None
     if os.path.exists('token.json'):
         creds = Credentials.from_authorized_user_file('token.json', SCOPES)
